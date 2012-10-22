@@ -7,7 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 
-gem "haml"
+gem "haml-rails"
 gem "twitter-bootstrap-rails"
 gem 'formtastic'
 gem 'formtastic-bootstrap'

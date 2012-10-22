@@ -1,4 +1,9 @@
 DonationTracker::Application.routes.draw do
+
+  resources :orgs
+
+  root :to => 'orgs#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
