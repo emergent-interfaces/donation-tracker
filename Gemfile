@@ -11,6 +11,7 @@ gem "haml-rails"
 gem "twitter-bootstrap-rails"
 gem 'formtastic'
 gem 'formtastic-bootstrap'
+gem 'font-awesome-rails'
 
 
 # Gems used only for assets and not required
