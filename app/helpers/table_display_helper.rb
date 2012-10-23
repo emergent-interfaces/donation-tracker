@@ -3,7 +3,7 @@ module TableDisplayHelper
   def table(collection, headers, empty_message=nil)
     empty_message ||= "No records in database"
 
-    output = "<table class='table'>\n"
+    output = "<table class='table datatable'>\n"
     output << "\t<thead><tr>"
     headers.each do |h|
       output << "<td>#{h}</td>"

@@ -1,5 +1,6 @@
 %h1 Donors
-= link_to add_link_text("Donor"), new_org_donor_path(@org), :class => 'btn'
+%p
+  = link_to add_link_text("Donor"), new_org_donor_path(@org), :class => 'btn'
 
 = table(@donors, ["Name", ""]) do |donor, klass|
   %tr(class=klass)

@@ -13,6 +13,8 @@ gem 'formtastic'
 gem 'formtastic-bootstrap'
 gem 'font-awesome-rails'
 
+gem 'jquery-datatables-rails'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

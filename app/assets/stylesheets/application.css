@@ -11,6 +11,7 @@
  *= require_self
  *= require formtastic
  *= require formtastic-bootstrap
- *= require 'font-awesome'
+ *= require font-awesome
+ *= require dataTables/jquery.dataTables.bootstrap
  *= require_tree .
  */
