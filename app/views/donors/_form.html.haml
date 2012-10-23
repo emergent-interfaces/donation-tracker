@@ -1,0 +1,4 @@
+= semantic_form_for [@org, @donor] do |f|
+  = f.inputs do
+    = render :partial => 'people/fields', :locals => {:form => f}
+  = f.actions

@@ -1,6 +1,9 @@
 DonationTracker::Application.routes.draw do
 
-  resources :orgs
+  resources :orgs do
+    resources :people
+    resources :donors
+  end
 
   root :to => 'orgs#index'
 

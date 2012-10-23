@@ -1,11 +1,12 @@
 %ul.nav(class="nav-list")
   %li.nav-header= @org.name
-  %li= link_to "<i class='icon-cog'></i>Organization Settings".html_safe, edit_org_path(@org)
+  %li= link_to "<i class='icon-home'></i> Organization".html_safe, @org
+  %li= link_to "<i class='icon-cog'></i> Settings".html_safe, edit_org_path(@org)
   %li.nav-header Inventory
   %li= link_to "<i class='icon-shopping-cart'></i> Warehouses".html_safe
   %li= link_to "<i class='icon-arrow-right'></i> Receptions".html_safe
   %li= link_to "<i class='icon-arrow-left'></i> Distributions".html_safe
   %li.nav-header Human Resources
-  %li= link_to "Donors"
+  %li= link_to "Donors", org_donors_path(@org)
   %li= link_to "Recipients"
   %li= link_to "Staff"
