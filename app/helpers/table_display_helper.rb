@@ -19,7 +19,7 @@ module TableDisplayHelper
         output << str
       end
     else
-      output << "\t<tr><td class='odd' colspan=#{headers.count}>#{empty_message}</td></tr>\n"
+      #output << "\t<tr><td class='odd' colspan=#{headers.count}>#{empty_message}</td></tr>\n"
     end
     output << "</tbody>"
 
