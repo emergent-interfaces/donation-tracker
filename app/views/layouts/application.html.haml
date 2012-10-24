@@ -20,19 +20,20 @@
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
-        .container-fluid
+        .container
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
           = link_to "DonationTracker", root_url, :class => 'brand'
 
-    .container-fluid
+    .container
 
-      .row-fluid
+      .row
         - if @org
           .span3
-            = render "shared/org_nav"
+            .well
+              = render "shared/org_nav"
           .span9
             = yield
         - else
