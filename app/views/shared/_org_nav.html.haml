@@ -4,7 +4,7 @@
   %li= link_to "<i class='icon-cog'></i> Settings".html_safe, edit_org_path(@org)
   %li= link_to "<i class='icon-book'></i> Reports".html_safe
   %li.nav-header Inventory
-  %li= link_to "<i class='icon-shopping-cart'></i> Warehouses".html_safe
+  %li= link_to "<i class='icon-shopping-cart'></i> Warehouses".html_safe, org_warehouses_path(@org)
   %li= link_to "<i class='icon-download-alt'></i> Receptions".html_safe
   %li= link_to "<i class='icon-upload-alt'></i> Distributions".html_safe
   %li.nav-header Human Resources
