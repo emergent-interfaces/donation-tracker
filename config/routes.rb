@@ -1,7 +1,7 @@
 DonationTracker::Application.routes.draw do
 
   resources :orgs do
-    resources :people
+    resources :profiles
     resources :warehouses
     resources :donors
     resources :recipients

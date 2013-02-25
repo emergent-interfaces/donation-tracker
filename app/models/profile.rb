@@ -1,4 +1,4 @@
-class Person < ActiveRecord::Base
+class Profile < ActiveRecord::Base
   attr_accessible :birthdate, :name, :donor
 
   belongs_to :donor
