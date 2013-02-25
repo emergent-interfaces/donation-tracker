@@ -1,5 +1,5 @@
 class Profile < ActiveRecord::Base
-  attr_accessible :birthdate, :name, :donor, :profile_type
+  attr_accessible :birthdate, :name, :donor, :profile_type, :notes
 
   belongs_to :donor
   belongs_to :recipient

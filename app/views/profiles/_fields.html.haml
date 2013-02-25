@@ -1,4 +1,5 @@
 = form.semantic_fields_for :profile do |profile|
   = profile.input :name
   = profile.input :profile_type, :as => :select, :collection => ProfileType
+  = profile.input :notes, :input_html => {:class => 'autogrow', :rows => 3}
   = profile.input :birthdate
