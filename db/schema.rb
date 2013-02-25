@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130225012305) do
+ActiveRecord::Schema.define(:version => 20130225013832) do
 
   create_table "addresses", :force => true do |t|
     t.text     "text"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20130225012305) do
     t.datetime "updated_at",   :null => false
     t.integer  "donor_id"
     t.integer  "recipient_id"
+    t.string   "profile_type"
   end
 
   create_table "recipients", :force => true do |t|
