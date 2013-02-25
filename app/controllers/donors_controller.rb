@@ -11,7 +11,7 @@ class DonorsController < ApplicationController
 
   def new
     @donor = Donor.new
-    @person = @donor.build_person
+    @profile = @donor.build_profile
   end
 
   def create

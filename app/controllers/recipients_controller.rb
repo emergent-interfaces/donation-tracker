@@ -11,7 +11,7 @@ class RecipientsController < ApplicationController
 
   def new
     @recipient = Recipient.new
-    @person = @recipient.build_person
+    @profile = @recipient.build_profile
   end
 
   def create
