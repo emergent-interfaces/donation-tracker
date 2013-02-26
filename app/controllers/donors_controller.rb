@@ -43,9 +43,4 @@ class DonorsController < ApplicationController
     @donor.destroy
     redirect_to org_donors_path(@org), :notice => "Donor deleted"
   end
-
-  private
-  def find_org
-    @org = Org.find(params[:org_id])
-  end
 end

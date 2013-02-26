@@ -1,0 +1,11 @@
+%h1 Item Types
+%p
+  = link_to add_link_text("Item Type"), new_org_item_type_path(@org), :class => 'btn'
+
+= table(@item_types, ["Name", "Counters", ""]) do |item_type, klass|
+  %tr(class=klass)
+    %td= item_type.name
+    %td= item_type.counters
+    %td
+      = link_to "<i class='icon-pencil'></i>".html_safe, edit_org_item_type_path(@org, item_type)
+      = link_to "<i class='icon-remove'></i>".html_safe, [@org, item_type], :method => "delete", :confirm => "Are you sure you want to delete this item type?"
