@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
 
   private
   def find_org
-    @org = Org.find(params[:org_id])
+    @org = Org.find(params[:org_id]) if params[:org_id]
   end
 end

@@ -30,7 +30,7 @@
     .container
 
       .row
-        - if @org
+        - if @org and not @org.new_record?
           .span3
             .well
               = render "shared/org_nav"
